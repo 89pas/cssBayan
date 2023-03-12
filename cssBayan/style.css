@@ -1,0 +1,198 @@
+
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: rgb(138, 134, 128);
+ }
+
+ .wrapper{
+    background-color: rgb(185, 182, 177);
+    padding: 5% 5%;
+ }
+
+ .accordion {
+     max-width: 75%;
+     margin: 0 auto;
+     padding: 5% 20%;
+
+ }
+
+ h1 {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .firstImg {
+     height: 20rem;
+     width: 20rem;
+ }
+
+ .oneImg {
+     text-align: center;
+     max-height: 0;
+     transition: 1.5s;
+     overflow: hidden;
+ }
+
+ .oneInput,
+ .twoInput,
+ .treeInput,
+ .fourInput,
+ .fiveInput {
+     appearance: none;
+     -webkit-appearance: none;
+
+     position: absolute;
+ }
+
+ .oneInput:checked~.oneImg {
+     max-height: 100vh;
+ }
+
+ .twoInput:checked~.twoImg {
+     max-height: 100vh;
+ }
+
+ .treeInput:checked~.treeImg {
+     max-height: 100vh;
+ }
+
+ .fourInput:checked~.fourImg {
+     max-height: 100vh;
+ }
+
+ .fiveInput:checked~.fiveImg {
+     max-height: 100vh;
+ }
+
+ label {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     display: flex;
+     padding: 1%;
+     margin-top: 2%;
+     position: relative;
+     align-items: center;
+ }
+
+ .blok {
+     cursor: pointer;
+     
+ }
+
+
+.arrow {
+  height: 1rem;
+  width: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(svg/add_icon_250531.svg);
+  rotate: -90deg;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  right: 5%;
+}
+
+.fiveInput:checked~.blok > .arrow {
+    rotate: 45deg;
+}
+
+.fourInput:checked~.blok > .arrow {
+    rotate: 45deg;
+}
+
+.treeInput:checked~.blok > .arrow {
+    rotate: 45deg;
+}
+
+.twoInput:checked~.blok > .arrow {
+    rotate: 45deg;
+}
+
+.oneInput:checked~.blok > .arrow {
+    rotate: 45deg;
+}
+
+ .one:hover>.oneImg {
+     max-height: 100vh;
+ }
+
+ .two:hover>.twoImg {
+     max-height: 100vh;
+ }
+
+ .tree:hover>.treeImg {
+     max-height: 100vh;
+ }
+
+ .four:hover>.fourImg {
+     max-height: 100vh;
+ }
+
+ .five:hover>.fiveImg {
+     max-height: 100vh;
+ }
+
+ hr {
+     border: none;
+     background-color: rgb(0, 0, 0);
+     color: rgb(0, 0, 0);
+     height: 0.1rem;
+ }
+
+ .twoImg,
+ .treeImg,
+ .fourImg,
+ .fiveImg {
+
+     text-align: center;
+     max-height: 0;
+     transition: 1.5s;
+     overflow: hidden;
+ }
+
+
+ @media (min-width: 320px) and (max-width: 819px) {
+ h1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }   
+ .firstImg{
+    width: 7rem;
+    height: 7rem;
+ }
+ 
+ label{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .accordion {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 3% 5%;
+
+}
+ 
+ }
+ @media (min-width: 820px)  and (max-width:1199px) {
+    .wrapper {
+      background-color: rgb(194, 181, 161);
+    }
+  
+    label {
+      font-size: 2rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }   
+      .firstImg{
+         width: 10rem;
+         height: 10rem;
+      }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1919px){
+    .wrapper{
+        background-color: aliceblue;
+    }
+  }
